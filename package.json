@@ -4,7 +4,7 @@
   "description": "example",
   "main": "lib/index.js",
   "scripts": {
-    "start-simple": "node src-simple-syntax/index.js",
+    "start-js": "node src-js/index.js",
     "start-mjs": "node --experimental-modules src-mjs/index.mjs",
     "start": "babel-node src/index.js",
     "build": "babel src -d lib",
