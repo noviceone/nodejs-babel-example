@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-babel-example",
+  "version": "1.0.0",
+  "description": "example",
+  "main": "lib/index.js",
+  "scripts": {
+    "start-simple": "node src-simple-syntax/index.js",
+    "start-mjs": "node --experimental-modules src-mjs/index.mjs",
+    "start": "babel-node src/index.js",
+    "build": "babel src -d lib",
+    "prod": "node lib/index.js",
+    "build-browser": "browserify src-browser/index.js -o browser/bundle.js -t [ babelify --presets [ @babel/preset-env ] ]"
+  },
+  "keywords": [
+    "node",
+    "babel",
+    "browserify",
+    "examples"
+  ],
+  "author": "demingongo",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0"
+  },
+  "dependencies": {}
+}
